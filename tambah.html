@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tambah Rekomendasi Buku</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Perpustakaan</div>
+      <ul>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="rekomendasi.html">Rekomendasi</a></li>
+        <li><a href="tambah.html" class="active">Tambah Rekomendasi</a></li>
+      </ul>
+    </nav>
+
+    <h1 class="page-title">Tambah Rekomendasi Buku</h1>
+
+    <div class="form-container">
+      <form id="bookForm">
+        <label>Nama Buku</label>
+        <input type="text" id="namaBuku" required />
+
+        <label>Penulis</label>
+        <input type="text" id="penulis" required />
+
+        <label>Tahun Terbit</label>
+        <input type="number" id="tahun" required />
+
+        <label>Gambar Buku</label>
+        <input type="file" id="gambar" accept="image/*" required />
+
+        <button type="submit" class="btn">Tambah Buku</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+
+   <footer class="footer">
+      <p>
+        © 2025 Perpustakaan Konoha — MUHAMMAD ARIFIN ALFIANTO NRP:3124510135
+      </p>
+    </footer>
+  </body>
+</html>

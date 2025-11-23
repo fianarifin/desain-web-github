@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f2ff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #673ab7;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 32px;
+    color: #4a2c88;
+}
+
+/* GRID */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+/* CARD A2 rounded + soft shadow */
+.book-card {
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transition: 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.18);
+}
+
+.book-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #3b2270;
+}
+
+.book-author {
+    color: #7b6ca8;
+}
+
+.rating {
+    margin-top: 5px;
+    color: gold;
+    font-size: 20px;
+}
+
+/* FORM */
+.form-container {
+    width: 400px;
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #4a2c88;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 12px;
+    border: 1px solid #c9c1e8;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #673ab7;
+    border: none;
+    border-radius: 14px;
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #5b32a3;
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    background: #c9302c;
+}
+
+.star {
+    font-size: 22px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star.active {
+    color: gold;
+}
+
+.rating-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #7c4dff, #512da8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background: #311b92;
+    border-radius: 14px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.hero-btn:hover {
+    background: #4527a0;
+}
+
+/* ===== FEATURE SECTION ===== */
+.feature-section {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.feature-section h2 {
+    color: #4a2c88;
+    font-size: 32px;
+}
+
+.feature-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    transition: 0.2s;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 22px rgba(0,0,0,0.18);
+}
+
+.feature-card h3 {
+    color: #4a2c88;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== ICON BOX ===== */
+.icon-box {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #673ab7;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 50px;
+    font-size: 15px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.15);
+}
+
+.footer p {
+    margin: 0;
+}
+
